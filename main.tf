@@ -33,9 +33,9 @@ module "wandb_infra" {
   kubernetes_public_access       = true
   kubernetes_public_access_cidrs = ["0.0.0.0/0"]
 
-  domain_name = var.domain_name
+  domain_name = "${var.subdomain}.${var.domain_name}"
   zone_id     = var.zone_id
-  subdomain   = var.subdomain
+  #subdomain   = var.subdomain
 
   bucket_name        = var.bucket_name
   bucket_kms_key_arn = var.bucket_kms_key_arn
