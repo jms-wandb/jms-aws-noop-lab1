@@ -81,6 +81,10 @@ module "wandb_app" {
   depends_on = [module.wandb_infra]
 }
 
+output "url" {
+  value = module.wandb_infra.url
+}
+
 output "bucket_name" {
   value = module.wandb_infra.bucket_name
 }
