@@ -1,3 +1,8 @@
+variable "aws_region" {
+  type        = string
+  description = "Region to deploy in for AWS"
+  default     = "us-east-2"
+}
 
 variable "namespace" {
   type        = string
