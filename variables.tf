@@ -89,3 +89,9 @@ variable "allowed_inbound_ipv6_cidr" {
   nullable = false
   type     = list(string)
 }
+
+variable "kubernetes_version" {
+  description = "Version of Kubernetes to install on the EKS cluster."
+  default = "1.28"
+  type = string
+}
