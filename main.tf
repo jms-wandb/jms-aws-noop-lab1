@@ -13,7 +13,7 @@ provider "aws" {
 
 module "wandb_infra" {
   source  = "wandb/wandb/aws"
-  version = "2.8.0"
+  version = "1.11.1"
 
   namespace     = var.namespace
   public_access = true
